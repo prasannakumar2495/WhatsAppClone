@@ -1,13 +1,14 @@
-package com.example.whatsappclone
+package com.example.whatsappclone.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import com.example.whatsappclone.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_create_account.*
 
 class CreateAccountActivity : AppCompatActivity() {
@@ -48,6 +49,7 @@ class CreateAccountActivity : AppCompatActivity() {
                 //below data will be added to the above obtained user ID.
                 //we can find the same uid, in the authentication and also in realtime database.
                 var userObject = HashMap<String, String>()
+                //all the below 4 statements are same.
                 userObject["display_name"] = displayName
                 userObject["status"] = "Hello there..."
                 userObject.put("image", "default")
@@ -59,6 +61,13 @@ class CreateAccountActivity : AppCompatActivity() {
                             this, "User is Created",
                             Toast.LENGTH_SHORT
                         ).show()
+                        var dashBoardIntent = Intent(this, DashboardActivity::class.java)
+                        dashBoardIntent.putExtra("name ", displayName)
+                        startActivity(dashBoardIntent)
+                        //we add finish method at the end, so that when the user clicks on the
+                        // back button after creating account he should be allowed to move back
+                        // to create account scree.
+                        finish()
                     } else {
                         Toast.makeText(
                             this, "User is not Created",
