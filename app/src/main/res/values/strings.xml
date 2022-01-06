@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WhatsApp Clone</string>
+    <string name="chat_image">TODO</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="login">Login</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="messageImage">TODO</string>
+</resources>

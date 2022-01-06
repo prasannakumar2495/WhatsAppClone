@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorful_wechat_and_whatsapp_theme_1"
+    tools:context=".CreateAccountActivity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/messageImage"
+                android:src="@android:drawable/sym_action_chat"
+                tools:ignore="ImageContrastCheck"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/create_a_new_account"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/accountDisplayNameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10dp"
+                    android:textColor="#f0f7f4"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+                    />
+
+                <EditText
+                    android:id="@+id/accountEmailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="10dp"
+                    android:textColor="#f0f7f4"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+                    />
+
+                <EditText
+                    android:id="@+id/accountPasswordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="10dp"
+                    android:textColor="#f0f7f4"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+                    android:importantForAutofill="no"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/accountCreateACTBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/create_a_new_account"
+                        android:textColor="#d3d3d3"
+                        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
