@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Not Signed In", Toast.LENGTH_SHORT).show()
             }
         }
-
+        //functionalities of the buttons in the main scree.
         loginButton.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }

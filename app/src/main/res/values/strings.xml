@@ -10,4 +10,13 @@
     <string name="messageImage">TODO</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="display_name">Display Name</string>
+    <string name="hey_i_am_using_what_sapp_clone">Hey! I am using What\'sApp clone</string>
+    <string name="change_picture">Change Picture</string>
+    <string name="change_status">Change Status</string>
+    <string name="enter_your_status">Enter Your Status</string>
+    <string name="enter_your_new_status">Enter Your New Status</string>
+    <string name="update_button">Update Button</string>
 </resources>
