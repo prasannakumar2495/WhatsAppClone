@@ -19,4 +19,6 @@
     <string name="enter_your_status">Enter Your Status</string>
     <string name="enter_your_new_status">Enter Your New Status</string>
     <string name="update_button">Update Button</string>
+    <string name="user_name">User Name</string>
+    <string name="user_status">User Status</string>
 </resources>

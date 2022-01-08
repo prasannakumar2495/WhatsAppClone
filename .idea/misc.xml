@@ -9,8 +9,9 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_status.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.16" />
         <entry key="app/src/main/res/layout/fragment_users.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/usersrow.xml" value="0.1" />
         <entry key="app/src/main/res/menu/mainmenu.xml" value="0.1" />
       </map>
     </option>

@@ -15,7 +15,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="517dp"
-        android:background="@android:drawable/ic_menu_report_image"
+        android:src="@android:drawable/ic_menu_report_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
